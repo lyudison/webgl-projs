@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Roaming and Flying</title>
+    <style>
+    div.box {
+      padding: 0px 5px;
+    }
+    .box {
+      display: inline-block;
+      vertical-align: top;
+    }
+    .border {
+      border-style: solid;
+      border-color: #000000;
+    }
+    .hint {
+      border-style: solid;
+      border-color: #FF0000; 
+      margin: 10px 0;
+    }
+    </style>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height-"400">
+    Please use a browser that supports "canvas"
+    </canvas>
+    <div>
+      <div class="box border">
+        <p>`w': move forward</p>
+        <p>`s': move backward</p>
+        <p>`a': move left</p>
+        <p>`d': move right</p>
+      </div>
+      <div class="box border">
+        <p>`←': rotate left</p>
+        <p>`→': rotate right</p>
+        <p>`↑': tilt upward</p>
+        <p>`↓': tilt downward</p>
+      </div>
+      <div class="box">
+        <div class="border">
+          <p>Drag the `torus' to rotate it. </p>
+          <p>Best effect can be seen from the `bird view'. </p>
+        </div>
+      </div>
+      <div id="panel" class="box"></div>
+    </div>
+
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-quat.js"></script>
+    <script src="lib/dat.gui.min.js"></script>
+    <script src="roaming and flying.js"></script>
+  </body>
+</html>

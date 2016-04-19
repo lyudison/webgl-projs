@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Solar System</title>
+  </head>
+  <body onload="main()">
+    <div>
+        <canvas id="webgl" width="700" height="700" style="position:absolute; z-index:0">
+        Please use a browser that supports "canvas"
+        </canvas>
+        <canvas id="hud" width="700" height="700" style="position:absolute; z-index:1;"></canvas>
+    </div>
+    <div style="position:absolute;left:720px;">
+        <div id="panel"></div>
+        <p style="margin-top:30px;">This is a simple solar system. It includes all the planets in Solar System and the largest satellite in Solar System rotating around Jupiter. (Try to click on the planets to figure out what they are.) All the planets obey the reality in size, velocity and distance from Sun if you set all the parameters to `1'.</p>
+        <p id="intro"></p>
+    </div>
+    <!--    Load in the JavaScript libraries supplied by our textbook 
+            (Matsuda et al., 2013 WebGL Programming Guide) that help us
+            with WebGL programming:
+    -->
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-quat.js"></script>
+    <script src="lib/dat.gui.min.js"></script>
+    <!--    Finally, load in our own JavaScript program file.
+    -->
+    <script src="solar system.js"></script>
+  </body>
+</html>

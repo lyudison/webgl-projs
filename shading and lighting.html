@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Shading and Lighting World</title>
+  </head>
+
+  <body onload="main()" onresize="winResize()">
+    <canvas id="webgl" width="400" height="400" style="vertical-align:top;display:inline-block">
+    Please use a browser that supports "canvas"
+    </canvas>
+    
+    <div style="vertical-align:top;display:inline-block">
+        <div id="datgui"></div>
+        <br><br>
+        <div style="width:250px">Use `w', `s', `a', `d' to MOVE, and `←', `→', `↑', `↓' to ROTATE. </div>
+    </div>
+
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-quat.js"></script>
+    <script src="lib/dat.gui.min.js"></script>
+    <script src="lib/lights-JT.js"></script>
+    <script src="lib/materials_Ayerdi.js"></script>
+    <script src="shading and lighting.js"></script>
+  </body>
+</html>
